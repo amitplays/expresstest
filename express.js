@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 // Define the port number on which the Express server will listen.
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // A simple authentication flag to indicate whether a user is authenticated or not.
 // NOTE: In real-world applications, you'd typically use more robust mechanisms.
